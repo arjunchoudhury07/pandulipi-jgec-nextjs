@@ -58,8 +58,8 @@ const MagazineMore = () => {
           <div key={index} id="card">
             <div className="relative">
               <Image
-                height={100}
-                width={100}
+                height={200}
+                width={200}
                 src={details.imgLink}
                 alt={details.name}
               />

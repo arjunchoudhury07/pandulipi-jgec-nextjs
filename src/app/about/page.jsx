@@ -41,10 +41,10 @@ function About() {
           <div className="flex flex-col justify-center items-center xl:flex-row">
             <Image
               height={300}
-              width={350}
+              width={400}
               src="/assets/img/Principal.jpg"
               alt=""
-              className="lg:h-72 h-56 rounded-md"
+              className="rounded-md p-5"
             />
             <div className="max-w-4xl xl:max-w-2xl text-xl text-center m-10 xl:text-left">
               <p>
@@ -110,9 +110,9 @@ function About() {
             <Image
               src="/assets/img/Goutam Kumar Panda.jpg"
               height={300}
-              width={350}
+              width={400}
               alt=""
-              className="lg:h-72 h-56 rounded-md m-10"
+              className="rounded-md p-5"
             />
             <div className="max-w-4xl text-lg text-justify m-10 xl:text-right">
               <p>

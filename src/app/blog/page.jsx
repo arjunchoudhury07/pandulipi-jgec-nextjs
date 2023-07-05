@@ -1,7 +1,8 @@
 import React from "react";
+import BlogPage from "../components/BlogPage/BlogPage";
 
 function page() {
-  return <div>page</div>;
+  return <BlogPage />;
 }
 
 export default page;

@@ -1,8 +1,9 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import BlogCard from "./BlogCard";
 import "./blog.css";
-import { Link } from "react-router-dom";
 import apiConfig from "../../api.config";
+import Link from "next/link";
 
 const BlogPage = () => {
   const items = 8;
@@ -73,7 +74,7 @@ const BlogPage = () => {
           </a>
         </form>
         <Link
-          to="/createblog"
+          href="/createblog"
           className="text-white text-xl mt-5 border-2 px-8 py-1.5 rounded-full border-white flex items-center hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]"
         >
           Create Blog
