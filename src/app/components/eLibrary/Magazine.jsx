@@ -46,12 +46,12 @@ const Magazine = () => {
       </h4>
       <div>
         <div id="row">
-          {magazineDetails.map((details) => (
-            <div id="card">
+          {magazineDetails.map((details, index) => (
+            <div key={index} id="card">
               <div className="relative">
                 <img src={details.imgLink} alt={details.name} />
                 <a
-                target="_blank"
+                  target="_blank"
                   href={details.downloadLink}
                   id="button"
                   className="absolute bottom-20 right-5 rounded-full py-[10px] px-[15px] bg-white shadow-md"

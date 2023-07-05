@@ -1,16 +1,17 @@
+import Link from "next/link";
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 import logo from "../../assets/img/Pandulipi Logo - White.png";
+
 import { useLogin } from "../../hooks/useLogin";
 
 const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const { login, error, isLoading } = useLogin();
   const verifyAndPostAuthInfo = async (event) => {
     event.preventDefault();
     await login(email, password);
-  }
+  };
 
   return (
     <>
@@ -42,7 +43,7 @@ const Login = () => {
                   placeholder="Enter your email"
                   name="email"
                   className="p-3 pl-10 text-black font-medium w-80 sm:w-96 bg-[#295C7A] bg-opacity-10 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
-                  onChange={(e)=> setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="relative">
@@ -66,14 +67,18 @@ const Login = () => {
                 />
               </div>
               <div>
-                <NavLink
+                <Link
                   className="text-lg font-medium text-[#295C7A]"
                   to="/login"
                 >
                   Forget Password ?
-                </NavLink>
+                </Link>
               </div>
-              {error && <div className="text-red-600 font-bold my-1 bg-[#fbe7e7] p-1 rounded-md border-2 border-red-300">{error}</div>}
+              {error && (
+                <div className="text-red-600 font-bold my-1 bg-[#fbe7e7] p-1 rounded-md border-2 border-red-300">
+                  {error}
+                </div>
+              )}
 
               <div>
                 <button
@@ -87,13 +92,13 @@ const Login = () => {
               </div>
               <div>
                 <span className="text-xl font-medium">
-                  Don't have an account?{" "}
-                  <NavLink
+                  Don&rsquo;t have an account?{" "}
+                  <Link
                     to="/signup"
                     className="text-xl text-[#252b42] font-bold"
                   >
                     Sign Up
-                  </NavLink>{" "}
+                  </Link>{" "}
                 </span>
               </div>
             </div>

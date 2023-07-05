@@ -12,11 +12,15 @@ export default function BlogCard(props) {
         <div className="font-normal">{props.time}</div>
       </div>
       <div id="blog">
-        <img src={`https://picsum.photos/300/200.webp?random=${props.id}`} alt={props.name} />
+        <img
+          src={`https://picsum.photos/300/200.webp?random=${props.id}`}
+          alt={props.name}
+        />
         <div className="flex flex-col mx-4">
           <div className="my-2">
-            {props.tags.map((item) => (
+            {props.tags.map((item, index) => (
               <a
+                key={index}
                 href="#"
                 className="bg-slate-700 mr-1 rounded-md px-2 py-1 text-semibold text-white"
               >

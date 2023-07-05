@@ -11,29 +11,32 @@ function About() {
         <div className="flex flex-col justify-center pb-10 items-center xl:flex-row-reverse">
           <div className="text-xl max-w-4xl text-center m-10 xl:text-left">
             <p>
-              The word ‘Pandulipi’ has a very special place in the Bengali
-              Language. It means ‘Manuscripts’. JGEC’s very first ‘Pandulipi’
-              was printed in 1961, when it was named Ekkani. A group of
-              like-minded poets, artists and dialectics came out of the shell of
-              engineering to weave magic, through the love of language and
-              literature. Pandulipi is a pillar of cultural exuberance. At our
-              college’s beloved Magazine Club, we invite all budding poets,
-              artists, painters, musicians, and aesthetes to join hands and
-              celebrate the joy of everyday life. From Tagore to Ray, from
-              Gulzar to Dylan, from Van Gogh to Jamini Roy, the Magazine Club
-              celebrates art and culture through several events, programmes and
-              festivals throughout the year. If you are a music-maker yourself,
-              join us at the Writer’s Block, our community of budding poets.
-              Given Jolu’s mystical surroundings and the warm embrace of the
-              foothills of the Himalayas, you might get lost too in these
-              manuscripts of old, and find yourself gaining a fresh perspective
-              on life, philosophy and yourself!
+              The word &lsquo;Pandulipi&rsquo; has a very special place in the
+              Bengali Language. It means &lsquo;Manuscripts&rsquo;. JGEC&rsquo;s
+              very first &lsquo;Pandulipi&rsquo; was printed in 1961, when it
+              was named Ekkani. A group of like-minded poets, artists and
+              dialectics came out of the shell of engineering to weave magic,
+              through the love of language and literature. Pandulipi is a pillar
+              of cultural exuberance. At our college&rsquo;s beloved Magazine
+              Club, we invite all budding poets, artists, painters, musicians,
+              and aesthetes to join hands and celebrate the joy of everyday
+              life. From Tagore to Ray, from Gulzar to Dylan, from Van Gogh to
+              Jamini Roy, the Magazine Club celebrates art and culture through
+              several events, programmes and festivals throughout the year. If
+              you are a music-maker yourself, join us at the Writer&rsquo;s
+              Block, our community of budding poets. Given Jolu&rsquo;s mystical
+              surroundings and the warm embrace of the foothills of the
+              Himalayas, you might get lost too in these manuscripts of old, and
+              find yourself gaining a fresh perspective on life, philosophy and
+              yourself!
             </p>
           </div>
         </div>
       </div>
       <div className="bg-[#252B42] text-white">
-        <h1 className="text-center text-5xl p-10">From the President's Desk</h1>
+        <h1 className="text-center text-5xl p-10">
+          From the President&rsquo;s Desk
+        </h1>
         <div className="flex flex-col items-center">
           <div className="flex flex-col justify-center items-center xl:flex-row">
             <Image
@@ -45,47 +48,48 @@ function About() {
             />
             <div className="max-w-4xl xl:max-w-2xl text-xl text-center m-10 xl:text-left">
               <p>
-                It gives me immense pleasure to inform that since past few
-                years, our college magazine, "PANDULIPI," has been covering all
-                of JGEC's activities. I'm quite delighted to show the
-                comprehensive records of our magazine club's college activities
-                and performances. It has taken many steps in order to develop
-                the students' abilities. "PANDULIPI" is the stage on which our
-                students' profound knowledge and skills are displayed. Our
-                students are developing their talents through writing,
-                interactions, presentations, and personality development, in
-                addition to mastering hard skills. 'They are ready to realise
-                their full potential and put their thoughts and experiences to
-                good use for the greater good. Through reading, group
-                discussions, writing competitions, research-oriented courses,
-                and other activities, we instil in our students a culture of
-                original thinking, as well as nurturing and growing physical and
-                mental strength to resist any scenario.
+                It gives me immense pleasure to inform that since the past few
+                years, our college magazine, &quot;PANDULIPI,&quot; has been
+                covering all of JGEC&apos;s activities. I&apos;m quite delighted
+                to show the comprehensive records of our magazine club&apos;s
+                college activities and performances. It has taken many steps in
+                order to develop the students&apos; abilities.
+                &quot;PANDULIPI&quot; is the stage on which our students&apos;
+                profound knowledge and skills are displayed. Our students are
+                developing their talents through writing, interactions,
+                presentations, and personality development, in addition to
+                mastering hard skills. &lsquo;They are ready to realize their
+                full potential and put their thoughts and experiences to good
+                use for the greater good. Through reading, group discussions,
+                writing competitions, research-oriented courses, and other
+                activities, we instill in our students a culture of original
+                thinking, as well as nurturing and growing physical and mental
+                strength to resist any scenario.
               </p>
             </div>
           </div>
           <div className="p-10">
             <p className="lg:text-left text-xl text-center max-w-4xl xl:max-w-6xl">
-              PANDULIPI displays our students' potential and sends a message to
-              the society that JGEC students are going to be the future leaders.
-              Pandulipi depicts the JGEC students' wholesome development. JGEC
-              is committed to upholding the tradition so that our students can
-              get the ability to use information effectively and efficiently for
-              the benefit of society at large. Under the leadership of the
-              faculty coordinator and student mentors, the Pandulipi team
-              exercises sustainability issues and plays a crucial role by
-              joining a new batch PANDULIPI has been strenuously crafted and
-              assisted by the alumnus of our college. It is through this
-              Magazine Club that our alumnus still maintains a consolidated
-              relationship with several cultural activities of our college
-              including Rabindra Sangeet, folk dance, recitation, poetry and
-              other creative spheres of life. This forms a platform to unveil
-              the prodigious talents of our students and encourages them to
-              pursue their extra-curricular activities besides studies. I would
-              also like to encourage all the students of JGEC to actively
-              participate in the events organised by this club, as it could
-              spread the crucial message of mental growth along with physical
-              amelioration to a larger section of the society.
+              PANDULIPI displays our students&apos; potential and sends a
+              message to the society that JGEC students are going to be the
+              future leaders. Pandulipi depicts the JGEC students&apos;
+              wholesome development. JGEC is committed to upholding the
+              tradition so that our students can get the ability to use
+              information effectively and efficiently for the benefit of society
+              at large. Under the leadership of the faculty coordinator and
+              student mentors, the Pandulipi team exercises sustainability
+              issues and plays a crucial role by joining a new batch PANDULIPI
+              has been strenuously crafted and assisted by the alumnus of our
+              college. It is through this Magazine Club that our alumnus still
+              maintains a consolidated relationship with several cultural
+              activities of our college including Rabindra Sangeet, folk dance,
+              recitation, poetry, and other creative spheres of life. This forms
+              a platform to unveil the prodigious talents of our students and
+              encourages them to pursue their extra-curricular activities
+              besides studies. I would also like to encourage all the students
+              of JGEC to actively participate in the events organized by this
+              club, as it could spread the crucial message of mental growth
+              along with physical amelioration to a larger section of society.
             </p>
             <br />
             <p className="text-xl max-w-7xl font-semibold lg:text-left">
@@ -99,13 +103,14 @@ function About() {
       </div>
       <div className="bg-[#EEEEEE]">
         <h1 className="text-center text-5xl p-10 text-[#295C7A]">
-          From the Vice President's Desk
+          From the Vice President&rsquo;s Desk
         </h1>
         <div className="flex flex-col items-center">
           <div className="flex flex-col justify-center items-center xl:flex-row-reverse">
-            <img
+            <Image
               src="/assets/img/Goutam Kumar Panda.jpg"
-              fill={true}
+              height={300}
+              width={350}
               alt=""
               className="lg:h-72 h-56 rounded-md m-10"
             />

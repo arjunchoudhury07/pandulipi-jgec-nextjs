@@ -63,8 +63,8 @@ function Hero3() {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
         >
-          {items.map((item) => (
-            <SwiperSlide>
+          {items.map((item, index) => (
+            <SwiperSlide key={index}>
               <div className="pl-10 flex items-center">
                 <LatestEventCard title={item.title} content={item.content} />
               </div>

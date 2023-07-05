@@ -177,7 +177,7 @@ const CoreTeam = () => {
       <div>
         <div className="flex justify-center items-center flex-wrap gap-x-32 pb-10 gap-y-8 px-10">
           {coreTeamDetails.map((details, ind) => (
-            <div className="flex flex-col items-center gap-4">
+            <div key={ind} className="flex flex-col items-center gap-4">
               <div className="relative">
                 <img
                   src={details.imgLink}

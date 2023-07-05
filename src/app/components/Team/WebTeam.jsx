@@ -60,7 +60,7 @@ const WebTeam = () => {
       <div>
         <div className="flex justify-center items-center flex-wrap gap-x-32 gap-y-8 px-10 pb-10 mt-4">
           {webTeamDetails.map((details, ind) => (
-            <div className="flex flex-col items-center gap-4">
+            <div key={ind} className="flex flex-col items-center gap-4">
               <div className="relative">
                 <img
                   src={details.imgLink}

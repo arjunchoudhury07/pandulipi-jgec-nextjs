@@ -14,37 +14,43 @@ const MagazineMore = () => {
       name: "Pandulipi",
       year: "2018",
       imgLink: cover_2018,
-      downloadLink: "https://drive.google.com/file/d/1VXUfS1A4RPn4Ypzg0k0awX1z-BfZMKNq/view?usp=sharing",
+      downloadLink:
+        "https://drive.google.com/file/d/1VXUfS1A4RPn4Ypzg0k0awX1z-BfZMKNq/view?usp=sharing",
     },
     {
       name: "Pandulipi",
       year: "2016",
       imgLink: cover_2016,
-      downloadLink: "https://drive.google.com/file/d/1dHOUV7PRCDicqRDW-zdSsq5fRUYgfS9Z/view?usp=sharing",
+      downloadLink:
+        "https://drive.google.com/file/d/1dHOUV7PRCDicqRDW-zdSsq5fRUYgfS9Z/view?usp=sharing",
     },
     {
       name: "Pandulipi",
       year: "2014",
       imgLink: cover_2014,
-      downloadLink: "https://drive.google.com/file/d/1m670uaJM-PA9zUszX_gcmi8HLwF6OtJQ/view?usp=sharing",
+      downloadLink:
+        "https://drive.google.com/file/d/1m670uaJM-PA9zUszX_gcmi8HLwF6OtJQ/view?usp=sharing",
     },
     {
       name: "Pandulipi",
       year: "1990",
       imgLink: cover_1990,
-      downloadLink: "https://drive.google.com/file/d/1s_jgMnMuoP5V40CTxRxkVqyBNe7yBrHZ/view?usp=sharing",
+      downloadLink:
+        "https://drive.google.com/file/d/1s_jgMnMuoP5V40CTxRxkVqyBNe7yBrHZ/view?usp=sharing",
     },
     {
       name: "Pandulipi",
       year: "1985",
       imgLink: cover_1985,
-      downloadLink: "https://drive.google.com/file/d/1STzcWm5S18Q1qTLp85QVHzeEhNztuQ3L/view?usp=sharing",
+      downloadLink:
+        "https://drive.google.com/file/d/1STzcWm5S18Q1qTLp85QVHzeEhNztuQ3L/view?usp=sharing",
     },
     {
       name: "Pandulipi",
       year: "1982",
       imgLink: cover_1982,
-      downloadLink: "https://drive.google.com/file/d/1A3DVdFoOKmcLKOzp6Qn4mSCZge4mqDNx/view?usp=sharing",
+      downloadLink:
+        "https://drive.google.com/file/d/1A3DVdFoOKmcLKOzp6Qn4mSCZge4mqDNx/view?usp=sharing",
     },
   ];
 
@@ -54,8 +60,8 @@ const MagazineMore = () => {
         Older Editions of Pandulipi
       </h4>
       <div id="row">
-        {MoreMagazineDetails.map((details) => (
-          <div id="card">
+        {MoreMagazineDetails.map((details, index) => (
+          <div key={index} id="card">
             <div className="relative">
               <img src={details.imgLink} alt={details.name} />
               <a
