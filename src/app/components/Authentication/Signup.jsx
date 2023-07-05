@@ -1,23 +1,30 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assets/img/Pandulipi Logo - White.png";
 import { useSignup } from "../../hooks/useSignup";
 
 const Signup = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [cpassword, setCPassword] = useState('');
-  const gradYears = ["2023", "2024", "2025", "2026", "Alumni"]
-  const allDepartments = ["Civil Engineering", "Computer Science and Engineering", "Information Technology", "Electronics and Communication Engineering", "Electrical Engineering", "Mechanical Engineering"]
-  const [gradYear, setGradYear] = useState("")
-  const [dept, setDept] = useState("")
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [cpassword, setCPassword] = useState("");
+  const gradYears = ["2023", "2024", "2025", "2026", "Alumni"];
+  const allDepartments = [
+    "Civil Engineering",
+    "Computer Science and Engineering",
+    "Information Technology",
+    "Electronics and Communication Engineering",
+    "Electrical Engineering",
+    "Mechanical Engineering",
+  ];
+  const [gradYear, setGradYear] = useState("");
+  const [dept, setDept] = useState("");
   const { signup, error, isLoading } = useSignup();
 
   const PostSignUpInfo = async (event) => {
     event.preventDefault();
     await signup(name, email, password, cpassword, gradYear, dept);
-  }
+  };
   return (
     <>
       <div className="flex justify-center items-center max-h-fit w-screen bg-[#252b42] py-10 px-5">
@@ -87,9 +94,12 @@ const Signup = () => {
                     <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
                   </svg>
                 </div>
-                <select className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-80 sm:w-96  rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                <select
+                  className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-80 sm:w-96  rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
                   value={gradYear}
-                  onChange={e => setGradYear(e.target.value)} name="gradYear" >
+                  onChange={(e) => setGradYear(e.target.value)}
+                  name="gradYear"
+                >
                   <option className="text-gray-500" value="" disabled selected>
                     The year of graduation
                   </option>
@@ -114,10 +124,11 @@ const Signup = () => {
                     />
                   </svg>
                 </div>
-                <select className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-80 sm:w-96 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                <select
+                  className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-80 sm:w-96 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
                   name="dept"
                   value={dept}
-                  onChange={e => setDept(e.target.value)}
+                  onChange={(e) => setDept(e.target.value)}
                 >
                   <option className="text-gray-500" value="" disabled selected>
                     Choose your department
@@ -127,7 +138,6 @@ const Signup = () => {
                       {value}
                     </option>
                   ))}
-
                 </select>
               </div>
               <div className="flex flex-col gap-3 items-center justify-center w-full gap-x-3">
@@ -172,7 +182,11 @@ const Signup = () => {
                   />
                 </div>
               </div>
-              {error && <div className="text-red-600 font-bold my-1 bg-[#fbe7e7] p-1 rounded-md border-2 border-red-300">{error}</div>}
+              {error && (
+                <div className="text-red-600 font-bold my-1 bg-[#fbe7e7] p-1 rounded-md border-2 border-red-300">
+                  {error}
+                </div>
+              )}
               <div>
                 <button
                   type="submit"
@@ -186,18 +200,18 @@ const Signup = () => {
               <div className="pb-2">
                 <span className="text-xl font-medium">
                   Already have an account?{" "}
-                  <NavLink
+                  <Link
                     to="/login"
                     className="text-xl text-[#252b42] font-bold"
                   >
                     Login
-                  </NavLink>{" "}
+                  </Link>{" "}
                 </span>
               </div>
             </div>
           </div>
         </div>
-      </div >
+      </div>
     </>
   );
 };

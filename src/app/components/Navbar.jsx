@@ -32,10 +32,10 @@ function Navbar() {
         <Link href="/" className="flex items-center">
           <Image
             src="/assets/img/Pandulipi Logo.png"
-            className="m-3 h-12 mt-0 xl:h-16"
+            className="m-3 "
             alt="Pandulipi Logo"
-            height={30}
-            width={30}
+            height={60}
+            width={60}
           />
           <span className="self-center text-2xl md:text-3xl font-semibold whitespace-nowrap text-white">
             Pandulipi
@@ -90,13 +90,12 @@ function Navbar() {
               <Link
                 onClick={clickAndScroll}
                 href="/"
-                className="block hover:bg-opacity-20 py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                className="block text-white hover:bg-opacity-20 py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                 styles={({ isActive }) =>
                   isActive
                     ? { color: "#00B8FF ", fontWeight: "bold" }
                     : { color: "white", fontWeight: "normal" }
                 }
-                end
               >
                 Home
               </Link>
@@ -105,7 +104,7 @@ function Navbar() {
               <Link
                 onClick={clickAndScroll}
                 href="/about"
-                className="block hover:bg-opacity-20 py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block text-white  hover:bg-opacity-20 py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 styles={({ isActive }) =>
                   isActive
                     ? { color: "#00B8FF ", fontWeight: "bold" }
@@ -119,7 +118,7 @@ function Navbar() {
               <Link
                 onClick={clickAndScroll}
                 href="/gallery"
-                className="block hover:bg-opacity-20 py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block  text-white hover:bg-opacity-20 py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 styles={({ isActive }) =>
                   isActive
                     ? { color: "#00B8FF ", fontWeight: "bold" }
@@ -133,7 +132,7 @@ function Navbar() {
               <Link
                 onClick={clickAndScroll}
                 href="/blog"
-                className="block hover:bg-opacity-20 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block text-white  hover:bg-opacity-20 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 styles={({ isActive }) =>
                   isActive
                     ? { color: "#00B8FF ", fontWeight: "bold" }
@@ -147,7 +146,7 @@ function Navbar() {
               <Link
                 onClick={clickAndScroll}
                 href="/elibrary"
-                className="block hover:bg-opacity-20 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block text-white  hover:bg-opacity-20 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 styles={({ isActive }) =>
                   isActive
                     ? { color: "#00B8FF ", fontWeight: "bold" }
@@ -161,7 +160,7 @@ function Navbar() {
               <Link
                 onClick={clickAndScroll}
                 href="/team"
-                className="block hover:bg-opacity-20 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block text-white  hover:bg-opacity-20 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 styles={({ isActive }) =>
                   isActive
                     ? { color: "#00B8FF ", fontWeight: "bold" }
@@ -175,7 +174,7 @@ function Navbar() {
               <Link
                 onClick={clickAndScroll}
                 href="/contact"
-                className="block hover:bg-opacity-20 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block text-white  hover:bg-opacity-20 py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 styles={({ isActive }) =>
                   isActive
                     ? { color: "#00B8FF ", fontWeight: "bold" }

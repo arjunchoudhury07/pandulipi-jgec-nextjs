@@ -1,7 +1,8 @@
 import React from "react";
+import Library from "../components/eLibrary/Library";
 
 function page() {
-  return <div>page</div>;
+  return <Library />;
 }
 
 export default page;

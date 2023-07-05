@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BlogCard from "./BlogCard";
 import "./blog.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import apiConfig from "../../api.config";
 
 const BlogPage = () => {
@@ -72,32 +72,37 @@ const BlogPage = () => {
             </svg>
           </a>
         </form>
-        <NavLink
+        <Link
           to="/createblog"
           className="text-white text-xl mt-5 border-2 px-8 py-1.5 rounded-full border-white flex items-center hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]"
         >
           Create Blog
-        </NavLink>
+        </Link>
       </div>
       <div className="blogcards">
-        {blogs.length>0 ? (<>
-         {blogs.map((element) => (
-          <div className="bCard" key={element._id}>
-            <BlogCard
-              id={element._id}
-              author={element.creator}
-              name={element.creator}
-              title={element.title.slice(0, 30)}
-              time={element.createdAt}
-              imgLink="https://picsum.photos/300/200"
-              tags={element.allTags}
-              content={element?.content?.slice(0, 200)}
-              likes={element.likes.length}
-            />
+        {blogs.length > 0 ? (
+          <>
+            {blogs.map((element) => (
+              <div className="bCard" key={element._id}>
+                <BlogCard
+                  id={element._id}
+                  author={element.creator}
+                  name={element.creator}
+                  title={element.title.slice(0, 30)}
+                  time={element.createdAt}
+                  imgLink="https://picsum.photos/300/200"
+                  tags={element.allTags}
+                  content={element?.content?.slice(0, 200)}
+                  likes={element.likes.length}
+                />
+              </div>
+            ))}
+          </>
+        ) : (
+          <div className="text-white text-2xl h-64 ">
+            There are no blogs to show
           </div>
-        ))}</>):(<div className="text-white text-2xl h-64 ">There are no blogs to show</div>)}
-
- 
+        )}
       </div>
       {/* <div className="flex flex-wrap justify-center mb-10">
         <button

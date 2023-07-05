@@ -1,9 +1,4 @@
 import React from "react";
-// import insta from "../assets/icons/instagram-logo-84.png";
-// import Linkedin from "../assets/icons/linkedin-square-logo-84.png";
-// import Youtube from "../assets/icons/youtube-logo-84.png";
-// import Facebook from "../assets/icons/facebook-circle-logo-84.png";
-// import Logo from "../assets/Image/JGEC Logo.png";
 
 import Image from "next/image";
 import Link from "next/link";
