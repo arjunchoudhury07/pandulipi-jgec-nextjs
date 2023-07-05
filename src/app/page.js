@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <Hero2 />
-      {/* <Hero3 /> */}
+      <Hero3 />
     </>
   );
 }

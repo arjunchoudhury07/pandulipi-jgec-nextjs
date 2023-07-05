@@ -1,7 +1,8 @@
 import React from "react";
+import CoreTeam from "../components/Team/CoreTeam";
 
 function page() {
-  return <div>page</div>;
+  return <>{/* <CoreTeam /> */}</>;
 }
 
 export default page;

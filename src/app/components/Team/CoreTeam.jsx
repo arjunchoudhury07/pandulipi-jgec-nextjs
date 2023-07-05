@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Card from "./Card";
 import Kushal_Ghosh from "../../assets/team/coreteam/Kushal_Ghosh.jpeg";

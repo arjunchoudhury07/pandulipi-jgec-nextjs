@@ -1,14 +1,14 @@
-import React from 'react'
-import CoreTeam from './CoreTeam'
-import WebTeam from './WebTeam'
+import React from "react";
+import CoreTeam from "./CoreTeam";
+import WebTeam from "./WebTeam";
 
 const Team = () => {
-    return (
-        <>
-            <CoreTeam />
-            <WebTeam />
-        </>
-    )
-}
+  return (
+    <>
+      {/* <CoreTeam />
+            <WebTeam /> */}
+    </>
+  );
+};
 
-export default Team
+export default Team;
