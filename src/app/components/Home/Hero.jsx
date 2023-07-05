@@ -9,7 +9,7 @@ function Hero() {
         src="/assets/img/hero.png"
         alt=""
         fill={true}
-        className="object-cover"
+        className="object-cover mt-[6.5rem]"
         priority
       />
       <div className="m-5 py-14 rounded-3xl max-w-7xl bg-gray-300 bg-opacity-50 backdrop-blur-md transition-all duration-500 flex flex-col justify-center items-center">

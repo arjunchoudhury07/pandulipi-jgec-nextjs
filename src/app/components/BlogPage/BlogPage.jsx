@@ -46,7 +46,7 @@ const BlogPage = () => {
   };
 
   return (
-    <div id="canvas">
+    <div className="bg-[#252B42] min-h-[70vh]">
       <h1 className="text-center text-5xl pt-10 pl-10 pr-10 text-[#fff]">
         Blogs
       </h1>
