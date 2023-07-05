@@ -1,16 +1,18 @@
+"use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import Card from "./Card";
-import arjun_choudhury_img from "../../assets/team/webteam/Arjun Choudhury.jpg";
-import atri_sukul_img from "../../assets/team/webteam/Atri Sukul.jpg";
-import sayan_kr_bhowmick_img from "../../assets/team/webteam/Sayan Kumar Bhowmick.jpg";
-import wasim_reja_img from "../../assets/team/webteam/Wasim Reja.jpeg";
-import samrat_sadhu_img from "../../assets/team/webteam/Samrat Sadhu.jpg";
+// import arjun_choudhury_img from "../../assets/team/webteam/Arjun Choudhury.jpg";
+// import atri_sukul_img from "../../assets/team/webteam/Atri Sukul.jpg";
+// import sayan_kr_bhowmick_img from "../../assets/team/webteam/Sayan Kumar Bhowmick.jpg";
+// import wasim_reja_img from "../../assets/team/webteam/Wasim Reja.jpeg";
+// import samrat_sadhu_img from "../../assets/team/webteam/Samrat Sadhu.jpg";
 const webTeamDetails = [
   {
     name: "WASIM REJA",
     designation: "Frontend Lead",
     department: "Information Technology",
-    imgLink: wasim_reja_img,
+    imgLink: "/assets/team/webteam/Wasim Reja.jpeg",
     linkedin: "https://www.linkedin.com/in/wasimreja/",
     github: "https://github.com/wasimreja/",
   },
@@ -18,7 +20,7 @@ const webTeamDetails = [
     name: "SAMRAT SADHU",
     designation: "Backend Lead",
     department: "Electronics & Communication Engineering",
-    imgLink: samrat_sadhu_img,
+    imgLink: "/assets/team/webteam/Samrat Sadhu.jpg",
     linkedin: "https://www.linkedin.com/in/samrat-sadhu-744874202",
     github: "https://github.com/Samrat-14",
   },
@@ -26,7 +28,7 @@ const webTeamDetails = [
     name: "ARJUN CHOUDHURY",
     designation: "Frontend Developer",
     department: "Information Technology",
-    imgLink: arjun_choudhury_img,
+    imgLink: "/assets/team/webteam/Arjun Choudhury.jpg",
     linkedin: "https://www.linkedin.com/in/arjun-choudhury-469671227/",
     github: "https://github.com/arjunchoudhury07",
   },
@@ -34,7 +36,7 @@ const webTeamDetails = [
     name: "ATRI SUKUL",
     designation: "Backend Developer",
     department: "Computer Science & Engineering",
-    imgLink: atri_sukul_img,
+    imgLink: "/assets/team/webteam/Atri Sukul.jpg",
     linkedin: "https://www.linkedin.com/in/atri-sukul-35a9b022a/",
     github: "https://github.com/AtriSukul1508",
   },
@@ -42,7 +44,7 @@ const webTeamDetails = [
     name: "SAYAN KUMAR BHOWMICK",
     designation: "Frontend Developer",
     department: "Computer Science & Engineering",
-    imgLink: sayan_kr_bhowmick_img,
+    imgLink: "/assets/team/webteam/Sayan Kumar Bhowmick.jpg",
     linkedin: "https://www.linkedin.com/in/sayankr007",
     github: "https://github.com/Sayankumar007",
   },
@@ -62,7 +64,9 @@ const WebTeam = () => {
           {webTeamDetails.map((details, ind) => (
             <div key={ind} className="flex flex-col items-center gap-4">
               <div className="relative">
-                <img
+                <Image
+                  height={150}
+                  width={150}
                   src={details.imgLink}
                   alt={details.name}
                   className="rounded-full mx-auto  w-48 h-48"

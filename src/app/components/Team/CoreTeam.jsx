@@ -1,24 +1,25 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import Card from "./Card";
-import Kushal_Ghosh from "../../assets/team/coreteam/Kushal_Ghosh.jpeg";
-import Arka_Biswas from "../../assets/team/coreteam/Arka Biswas.jpeg";
-import Bisal_Kumar from "../../assets/team/coreteam/Bisal Kumar.jpeg";
-import Nisha from "../../assets/team/coreteam/Nisha.jpeg";
-import Protiti_Saha from "../../assets/team/coreteam/Protiti Saha.jpeg";
-import Saikat_Parker from "../../assets/team/coreteam/Saikat Parker.jpeg";
-import Saikat_Sarkar from "../../assets/team/coreteam/Saikat Sarkar.jpeg";
-import Sastipada from "../../assets/team/coreteam/Sastipada.jpeg";
-import Shourjendra from "../../assets/team/coreteam/Shourjendra.jpeg";
-import Soham_Sen from "../../assets/team/coreteam/Soham Sen.jpeg";
-import Soumya_Samanta from "../../assets/team/coreteam/Soumya Samanta.jpeg";
-import Sourav_Ghosh from "../../assets/team/coreteam/Sourav Ghosh.jpeg";
-import Souvik_Biswas from "../../assets/team/coreteam/Souvik Biswas.jpeg";
-import Sushant_Kumar from "../../assets/team/coreteam/Sushant Kumar.jpeg";
-import Tunnisha from "../../assets/team/coreteam/Tunnisha.jpeg";
-import Uttaran from "../../assets/team/coreteam/Uttaran.jpeg";
-import V_Nikita from "../../assets/team/coreteam/V Nikhita.jpeg";
-import Wasim_reja from "../../assets/team/coreteam/Wasim Reja.jpeg";
+// import Kushal_Ghosh from "../../assets/team/coreteam/Kushal_Ghosh.jpeg";
+// import Arka_Biswas from "../../assets/team/coreteam/Arka Biswas.jpeg";
+// import Bisal_Kumar from "../../assets/team/coreteam/Bisal Kumar.jpeg";
+// import Nisha from "../../assets/team/coreteam/Nisha.jpeg";
+// import Protiti_Saha from "../../assets/team/coreteam/Protiti Saha.jpeg";
+// import Saikat_Parker from "../../assets/team/coreteam/Saikat Parker.jpeg";
+// import Saikat_Sarkar from "../../assets/team/coreteam/Saikat Sarkar.jpeg";
+// import Sastipada from "../../assets/team/coreteam/Sastipada.jpeg";
+// import Shourjendra from "../../assets/team/coreteam/Shourjendra.jpeg";
+// import Soham_Sen from "../../assets/team/coreteam/Soham Sen.jpeg";
+// import Soumya_Samanta from "../../assets/team/coreteam/Soumya Samanta.jpeg";
+// import Sourav_Ghosh from "../../assets/team/coreteam/Sourav Ghosh.jpeg";
+// import Souvik_Biswas from "../../assets/team/coreteam/Souvik Biswas.jpeg";
+// import Sushant_Kumar from "../../assets/team/coreteam/Sushant Kumar.jpeg";
+// import Tunnisha from "../../assets/team/coreteam/Tunnisha.jpeg";
+// import Uttaran from "../../assets/team/coreteam/Uttaran.jpeg";
+// import V_Nikita from "../../assets/team/coreteam/V Nikhita.jpeg";
+// import Wasim_reja from "../../assets/team/coreteam/Wasim Reja.jpeg";
 
 const CoreTeam = () => {
   const [show, setShow] = useState(false);
@@ -29,7 +30,7 @@ const CoreTeam = () => {
       designation: "Secretary & Bengali Editor",
       department: "Electrical Engineering",
       linkedin: "https://www.linkedin.com/in/uttaran-nath-sarkar-148498203",
-      imgLink: Uttaran,
+      imgLink: "/assets/team/coreteam/Uttaran.jpeg",
       github: "",
     },
     {
@@ -37,7 +38,7 @@ const CoreTeam = () => {
       designation: "Cashier & Bengali Editor",
       department: "Electrical Engineering",
       linkedin: "https://www.linkedin.com/in/sastipada-dan-266019203",
-      imgLink: Sastipada,
+      imgLink: "/assets/team/coreteam/Sastipada.jpeg",
       github: "",
     },
     {
@@ -45,7 +46,7 @@ const CoreTeam = () => {
       designation: "Cashier & English Editor",
       department: "Computer Science & Engineering",
       linkedin: "https://www.linkedin.com/in/nikhita28",
-      imgLink: V_Nikita,
+      imgLink: "/assets/team/coreteam/V Nikhita.jpeg",
       github: "",
     },
     {
@@ -53,7 +54,7 @@ const CoreTeam = () => {
       designation: "Media, Web & Technical Head",
       department: "Information Technology",
       linkedin: "https://www.linkedin.com/in/wasimreja/",
-      imgLink: Wasim_reja,
+      imgLink: "/assets/team/coreteam/Wasim Reja.jpeg",
       github: "",
     },
     {
@@ -61,7 +62,7 @@ const CoreTeam = () => {
       designation: "Strategist & Hindi Editor",
       department: "Information Technology",
       linkedin: "https://www.linkedin.com/in/bisal-kumar-97459122a",
-      imgLink: Bisal_Kumar,
+      imgLink: "/assets/team/coreteam/Bisal Kumar.jpeg",
       github: "",
     },
     {
@@ -69,7 +70,7 @@ const CoreTeam = () => {
       designation: "Strategist & Event Head",
       department: "Electrical Engineering",
       linkedin: "https://www.linkedin.com/in/protiti-saha-b91028203/",
-      imgLink: Protiti_Saha,
+      imgLink: "/assets/team/coreteam/Protiti Saha.jpeg",
       github: "",
     },
     {
@@ -77,7 +78,7 @@ const CoreTeam = () => {
       designation: "Strategist & Hindi Editor",
       department: "Computer Science & Engineering",
       linkedin: "https://www.linkedin.com/in/nisha-yadav-2950351ab/",
-      imgLink: Nisha,
+      imgLink: "/assets/team/coreteam/Nisha.jpeg",
       github: "",
     },
     {
@@ -85,7 +86,7 @@ const CoreTeam = () => {
       designation: "English Editor",
       department: "Electrical Engineering",
       linkedin: "https://www.linkedin.com/in/nuclearcactus/",
-      imgLink: Soham_Sen,
+      imgLink: "/assets/team/coreteam/Soham Sen.jpeg",
       github: "",
     },
     {
@@ -93,7 +94,7 @@ const CoreTeam = () => {
       designation: "English Editor",
       department: "Civil Engineering",
       linkedin: "https://www.linkedin.com/in/tunnisha-das-gupta-a43231204/",
-      imgLink: Tunnisha,
+      imgLink: "/assets/team/coreteam/Tunnisha.jpeg",
       github: "",
     },
     {
@@ -101,7 +102,7 @@ const CoreTeam = () => {
       designation: "Bengali Editor",
       department: "Electrical Engineering",
       linkedin: "https://www.linkedin.com/in/sourav-ghosh-02b3ba213",
-      imgLink: Sourav_Ghosh,
+      imgLink: "/assets/team/coreteam/Sourav Ghosh.jpeg",
       github: "",
     },
     {
@@ -109,7 +110,7 @@ const CoreTeam = () => {
       designation: "Hindi Editor",
       department: "Information Technology",
       linkedin: "https://www.linkedin.com/in/sushantkumargupta2001",
-      imgLink: Sushant_Kumar,
+      imgLink: "/assets/team/coreteam/Sushant Kumar.jpeg",
       github: "",
     },
     {
@@ -117,7 +118,7 @@ const CoreTeam = () => {
       designation: "Design Head",
       department: "Civil Engineering Department",
       linkedin: "https://www.linkedin.com/in/saikat-paikar-905a70207",
-      imgLink: Saikat_Parker,
+      imgLink: "/assets/team/coreteam/Saikat Parker.jpeg",
       github: "",
     },
     {
@@ -125,7 +126,7 @@ const CoreTeam = () => {
       designation: "Design Head",
       department: "Electrical Engineering",
       linkedin: "https://www.linkedin.com/in/arka-biswas-859428203/",
-      imgLink: Arka_Biswas,
+      imgLink: "/assets/team/coreteam/Arka Biswas.jpeg",
       github: "",
     },
     {
@@ -133,7 +134,7 @@ const CoreTeam = () => {
       designation: "Artwork Head",
       department: "Civil Engineering Department",
       linkedin: "https://www.linkedin.com/in/soumya-samanta-b55426203",
-      imgLink: Soumya_Samanta,
+      imgLink: "/assets/team/coreteam/Soumya Samanta.jpeg",
       github: "",
     },
     {
@@ -141,7 +142,7 @@ const CoreTeam = () => {
       designation: "Photography Head",
       department: "Electronics & Communication Engineering",
       linkedin: "https://www.linkedin.com/in/souvik-biswas-84b766246/",
-      imgLink: Souvik_Biswas,
+      imgLink: "/assets/team/coreteam/Souvik Biswas.jpeg",
       github: "",
     },
     {
@@ -149,7 +150,7 @@ const CoreTeam = () => {
       designation: "Photography Head",
       department: "Information Technology",
       linkedin: "https://www.linkedin.com/in/kushaljgec2025/",
-      imgLink: Kushal_Ghosh,
+      imgLink: "/assets/team/coreteam/Kushal_Ghosh.jpeg",
       github: "",
     },
     {
@@ -157,7 +158,7 @@ const CoreTeam = () => {
       designation: "Social Media Head & Event Head",
       department: "Information Technology",
       linkedin: "https://www.linkedin.com/in/shourjendra-banerjee-82589422a/",
-      imgLink: Shourjendra,
+      imgLink: "/assets/team/coreteam/Shourjendra.jpeg",
       github: "",
     },
     {
@@ -165,7 +166,7 @@ const CoreTeam = () => {
       designation: "Social Media Head",
       department: "Mechanical Engineering",
       linkedin: "https://www.linkedin.com/in/saikat-sarkar-259021203",
-      imgLink: Saikat_Sarkar,
+      imgLink: "/assets/team/coreteam/Saikat Sarkar.jpeg",
       github: "",
     },
   ];
@@ -180,7 +181,9 @@ const CoreTeam = () => {
           {coreTeamDetails.map((details, ind) => (
             <div key={ind} className="flex flex-col items-center gap-4">
               <div className="relative">
-                <img
+                <Image
+                  height={150}
+                  width={150}
                   src={details.imgLink}
                   alt={details.name}
                   className="rounded-full mx-auto  w-44 h-44 "
