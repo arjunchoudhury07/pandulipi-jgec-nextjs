@@ -59,8 +59,8 @@ const BlogPage = () => {
             type="text"
             id="blogName"
             name="blogName"
-            placeholder="Search Blogs"
-            className="rounded-l-full flex-1 border-none focus:ring-0"
+            placeholder="    Search Blogs"
+            className="rounded-l-full flex-1 border-none focus:ring-0 py-2"
           />
           <a className="h-auto border-none flex items-center justify-center bg-white px-5 py-2 rounded-r-full hover:cursor-pointer">
             <svg
