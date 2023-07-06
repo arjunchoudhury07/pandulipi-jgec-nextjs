@@ -1,7 +1,7 @@
 "use client";
+import CoreTeam from "../components/Team/CoreTeam2023";
 import Link from "next/link";
 import React, { useState } from "react";
-import CoreTeam from "../components/Team/CoreTeam";
 import WebTeam from "../components/Team/WebTeam";
 
 function Page() {
@@ -18,15 +18,15 @@ function Page() {
     scrollToTop();
   };
   return (
-    <div className="flex flex-col items-center bg-[#252b42] pb-10">
+    <div className="flex flex-col items-center w-screen bg-[#252b42] pb-10">
       <CoreTeam />
       <WebTeam />
       <Link
-        href="/former-team"
+        href="/team"
         onClick={clickAndScroll}
         className="cursor-pointer inline-flex justify-center items-center py-3 px-8  xl:text-xl text-center font-semibold border-2 border-white text-white hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]"
       >
-        Show 2k23 Team
+        Show Recent Team
       </Link>
     </div>
   );

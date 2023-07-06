@@ -2,24 +2,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Card from "./Card";
-// import Kushal_Ghosh from "../../assets/team/coreteam/Kushal_Ghosh.jpeg";
-// import Arka_Biswas from "../../assets/team/coreteam/Arka Biswas.jpeg";
-// import Bisal_Kumar from "../../assets/team/coreteam/Bisal Kumar.jpeg";
-// import Nisha from "../../assets/team/coreteam/Nisha.jpeg";
-// import Protiti_Saha from "../../assets/team/coreteam/Protiti Saha.jpeg";
-// import Saikat_Parker from "../../assets/team/coreteam/Saikat Parker.jpeg";
-// import Saikat_Sarkar from "../../assets/team/coreteam/Saikat Sarkar.jpeg";
-// import Sastipada from "../../assets/team/coreteam/Sastipada.jpeg";
-// import Shourjendra from "../../assets/team/coreteam/Shourjendra.jpeg";
-// import Soham_Sen from "../../assets/team/coreteam/Soham Sen.jpeg";
-// import Soumya_Samanta from "../../assets/team/coreteam/Soumya Samanta.jpeg";
-// import Sourav_Ghosh from "../../assets/team/coreteam/Sourav Ghosh.jpeg";
-// import Souvik_Biswas from "../../assets/team/coreteam/Souvik Biswas.jpeg";
-// import Sushant_Kumar from "../../assets/team/coreteam/Sushant Kumar.jpeg";
-// import Tunnisha from "../../assets/team/coreteam/Tunnisha.jpeg";
-// import Uttaran from "../../assets/team/coreteam/Uttaran.jpeg";
-// import V_Nikita from "../../assets/team/coreteam/V Nikhita.jpeg";
-// import Wasim_reja from "../../assets/team/coreteam/Wasim Reja.jpeg";
 
 const CoreTeam = () => {
   const [show, setShow] = useState(false);
@@ -172,21 +154,24 @@ const CoreTeam = () => {
   ];
 
   return (
-    <div className="bg-[#EEEEEE] ">
-      <h1 className="text-center text-5xl p-10 text-[#295C7A]">
+    <div className="bg-[#EEEEEE] w-full">
+      <h1 className="text-center text-5xl p-10 pb-16 text-[#295C7A]">
         Meet the Core Team
       </h1>
       <div>
-        <div className="flex justify-center items-center flex-wrap gap-x-32 pb-10 gap-y-8 px-10">
+        <div className="flex max-w-7xl mx-auto justify-center items-center flex-wrap gap-x-20 pb-10 gap-y-4 px-10">
           {coreTeamDetails.map((details, ind) => (
-            <div key={ind} className="flex flex-col items-center gap-4">
-              <div className="relative">
+            <div
+              key={ind}
+              className="flex flex-col items-center justify-start w-48 h-72 gap-4 "
+            >
+              <div className="relative ">
                 <Image
                   height={150}
                   width={150}
                   src={details.imgLink}
                   alt={details.name}
-                  className="rounded-full mx-auto  w-44 h-44 "
+                  className="rounded-full ring-2 ring-blue-700 p-1 mx-auto  w-44 h-44 "
                 />
                 <button
                   onClick={() => {

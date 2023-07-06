@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <Image
-        src="assets/img/hero.png"
+        src="/assets/img/hero.png"
         alt=""
         fill={true}
         className="object-cover mt-[6.5rem]"
