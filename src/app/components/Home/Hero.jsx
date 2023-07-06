@@ -2,17 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import heroImg from "../../../../public/assets/img/hero.png";
-
 function Hero() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       <Image
-        src={heroImg}
+        src="assets/img/hero.png"
         alt=""
         fill={true}
         className="object-cover mt-[6.5rem]"
-        placeholder="blur"
         priority
       />
       <div className="m-5 py-14 rounded-3xl max-w-7xl bg-gray-300 bg-opacity-50 backdrop-blur-md transition-all duration-500 flex flex-col justify-center items-center">
