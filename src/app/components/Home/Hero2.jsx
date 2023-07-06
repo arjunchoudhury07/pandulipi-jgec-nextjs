@@ -1,10 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 function Hero2() {
   return (
     <div className="min-h-screen gap-x-60 bg-[#252B42] flex flex-col justify-center items-center xl:flex-row">
-      <img
+      <Image
+        height={600}
+        width={600}
         className="p-10 max-w-sm md:max-w-lg xl:max-w-xl"
         src="/assets/img/2022.png"
         alt=""

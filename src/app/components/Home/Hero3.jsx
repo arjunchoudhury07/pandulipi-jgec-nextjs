@@ -74,38 +74,6 @@ function Hero3() {
       </div>
     </div>
   );
-  // return (
-  //   <>
-  //     <h2 className="text-4xl md:text-5xl text-center p-10 text-[#295C7A] xl:text-7xl">
-  //       LATEST EVENTS
-  //     </h2>
-  //     <Swiper
-  //       modules={[Navigation, Pagination, Scrollbar, A11y]}
-  //       spaceBetween={40}
-  //       slidesPerView={1}
-  //       breakpoints={{
-  //         576: {
-  //           // width: 576,
-  //           slidesPerView: 2,
-  //         },
-  //         768: {
-  //           // width: 768,
-  //           slidesPerView: 3,
-  //         },
-  //       }}
-  //       navigation
-  //       onSlideChange={() => console.log("slide change")}
-  //       onSwiper={(swiper) => console.log(swiper)}
-  //     >
-  //       {items.map((item, index) => (
-  //         <SwiperSlide key={index}>
-  //           <div className="pl-10 flex items-center">
-  //             <LatestEventCard title={item.title} content={item.content} />
-  //           </div>
-  //         </SwiperSlide>
-  //       ))}
-  //     </Swiper>
-  //   </>
 }
 
 export default Hero3;
