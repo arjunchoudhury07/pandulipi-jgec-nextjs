@@ -24,7 +24,10 @@ function Footer() {
         </div>
         <div className="flex mb-5 gap-7 md:mr-7 mr-0">
           <div className=" cursor-pointer">
-            <Link href="https://www.facebook.com/mag.pandulipi.jgec/">
+            <Link
+              aria-label="facebook"
+              href="https://www.facebook.com/mag.pandulipi.jgec/"
+            >
               <Image
                 src="/assets/icons/facebook-circle-logo-84.png"
                 alt=""
@@ -34,7 +37,10 @@ function Footer() {
             </Link>
           </div>
           <div className=" cursor-pointer">
-            <Link href="https://www.instagram.com/pandulipiofficial/">
+            <Link
+              aria-label="instagram"
+              href="https://www.instagram.com/pandulipiofficial/"
+            >
               <Image
                 src="/assets/icons/instagram-logo-84.png"
                 alt=""
@@ -44,7 +50,10 @@ function Footer() {
             </Link>
           </div>
           <div className=" cursor-pointer">
-            <Link href="https://www.linkedin.com/company/pandulipi/">
+            <Link
+              aria-label="linkedin"
+              href="https://www.linkedin.com/company/pandulipi/"
+            >
               <Image
                 src="/assets/icons/linkedin-square-logo-84.png"
                 alt=""
@@ -54,7 +63,10 @@ function Footer() {
             </Link>
           </div>
           <div className=" cursor-pointer">
-            <Link href="https://www.youtube.com/@JGECDiaries">
+            <Link
+              aria-label="youtube"
+              href="https://www.youtube.com/@JGECDiaries"
+            >
               <Image
                 src="/assets/icons/youtube-logo-84.png"
                 alt=""

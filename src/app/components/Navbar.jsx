@@ -90,7 +90,7 @@ function Navbar() {
               <Link
                 onClick={clickAndScroll}
                 href="/"
-                className="block text-white hover:bg-opacity-20 py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                className="block text-white hover:bg-opacity-20 py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:bg-transparent md:p-0 dark:text-white"
                 styles={({ isActive }) =>
                   isActive
                     ? { color: "#00B8FF ", fontWeight: "bold" }
@@ -184,8 +184,8 @@ function Navbar() {
                 Contact
               </Link>
             </li>
-            <div className="flex gap-x-5 visible sm: justify-center">
-              {/* {!user ? (
+            {/* <div className="flex gap-x-5 visible sm: justify-center">
+              {!user ? (
                 <>
                   <Link
                     onClick={clickAndScroll}
@@ -210,8 +210,8 @@ function Navbar() {
                 >
                   Logout
                 </Link>
-              )} */}
-            </div>
+              )}
+            </div> */}
           </ul>
         </div>
       </div>
