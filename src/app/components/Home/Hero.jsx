@@ -8,9 +8,11 @@ function Hero() {
       <Image
         src="/assets/img/hero.png"
         alt=""
-        fill={true}
-        className="object-cover mt-[6.5rem]"
+        height={1080}
+        width={1920}
+        className="absolute top-30 scale-y-125 sm:scale-100 h-full w-full object-cover"
         priority
+        placeholder="empty"
       />
       <div className="m-5 py-14 rounded-3xl max-w-7xl bg-gray-300 bg-opacity-50 backdrop-blur-md transition-all duration-500 flex flex-col justify-center items-center">
         <h1 className="text-7xl xl:text-8xl font-semibold tracking-tighter">
