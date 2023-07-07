@@ -6,7 +6,9 @@ import "./library.css";
 const Library = () => {
   return (
     <div id="canvas">
-      <h1 className="text-center text-5xl p-10 text-[#fff]">E-Library</h1>
+      <h1 className="text-center font-bold text-6xl p-10 text-[#fff]">
+        E-Library
+      </h1>
       <div className="flex flex-wrap justify-center mb-10">
         <a
           target="_blank"
