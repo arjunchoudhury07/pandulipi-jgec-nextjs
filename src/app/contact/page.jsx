@@ -1,6 +1,15 @@
+"use client";
+import Link from "next/link";
 import React from "react";
+import { useForm } from "react-hook-form";
 
 function ContactUs() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitSuccessful, isSubmitting },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
   return (
     <div className="bg-[#EEEEEE] flex flex-col items-center justify-center w-screen min-h-[70vh]">
       <h2 className="text-center text-5xl p-10 text-[#295C7A]">Contact Us</h2>
@@ -19,10 +28,13 @@ function ContactUs() {
                 <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
               </svg>
 
-              <div>
+              <a
+                href="mailto:pandulipi@jgec.ac.in?subject=Mail from Pandulipi Website"
+                // target="_blank"
+              >
                 <p className="text-xl">Email</p>
                 <p>pandulipi@jgec.ac.in</p>
-              </div>
+              </a>
             </div>
 
             <div className="flex items-center">
@@ -39,16 +51,29 @@ function ContactUs() {
                 />
               </svg>
 
-              <div>
+              <Link
+                target="_blank"
+                href="http://maps.google.com?q=26.5459447,88.70117926"
+              >
                 <p className="text-xl">Location</p>
                 <p>Jalpaiguri, West Bengal 735102, India</p>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
         {/* form start */}
         <div className="w-full xl:w-1/2 py-10 flex flex-col justify-center items-center text-[#295C7A]">
-          <form className="flex flex-col gap-y-4 w-full ">
+          <div className="flex flex-col text-red-600 items-center">
+            <div>{errors.firstname && errors.firstname.message}</div>
+            <div>{errors.lastname && errors.lastname.message}</div>
+            <div>{errors.email && errors.email.message}</div>
+            <div>{errors.message && errors.message.message}</div>
+          </div>
+
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="flex flex-col gap-y-4 w-full "
+          >
             <div className="grid md:grid-cols-2 md:gap-6">
               <div>
                 <label
@@ -58,6 +83,10 @@ function ContactUs() {
                   First Name
                 </label>
                 <input
+                  {...register("firstname", {
+                    required: "Firstname is required",
+                    maxLength: 20,
+                  })}
                   type="text"
                   id="small-input"
                   className="block w-full p-3 text-black bg-[#295C7A] bg-opacity-10 rounded-md"
@@ -71,6 +100,10 @@ function ContactUs() {
                   Last Name
                 </label>
                 <input
+                  {...register("lastname", {
+                    required: "Lastname is required",
+                    maxLength: 20,
+                  })}
                   type="text"
                   id="small-input"
                   className="block w-full p-3 text-black bg-[#295C7A] bg-opacity-10 rounded-md"
@@ -85,7 +118,11 @@ function ContactUs() {
                 Email
               </label>
               <input
-                type="text"
+                {...register("email", {
+                  required: "Email is required",
+                  maxLength: 80,
+                })}
+                type="email"
                 id="small-input"
                 className="block w-full p-3 text-black bg-[#295C7A] bg-opacity-10 rounded-md"
               />
@@ -95,18 +132,28 @@ function ContactUs() {
               Your message
             </label>
             <textarea
+              {...register("message", {
+                required: "Message is required",
+                maxLength: 200,
+              })}
               id="message"
               rows="6"
               class="block p-2.5 w-full text-sm bg-[#295C7A] bg-opacity-10 rounded-md"
               placeholder="Write your thoughts here..."
             ></textarea>
+            <button
+              disabled={isSubmitting}
+              type="submit"
+              className="text-white mt-4 bg-[#295C7A] hover:bg-[#1a5171] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl w-full sm:w-auto px-5 py-2.5 text-center"
+            >
+              Send
+            </button>
           </form>
-          <button
-            type="submit"
-            className="text-white mt-4 bg-[#295C7A] hover:bg-[#1a5171] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl w-full sm:w-auto px-5 py-2.5 text-center"
-          >
-            Send
-          </button>
+          {isSubmitSuccessful && (
+            <p className="text-green-600 font-bold pt-5">
+              Your message was successfully Submitted
+            </p>
+          )}
         </div>
         {/* form end */}
       </div>
